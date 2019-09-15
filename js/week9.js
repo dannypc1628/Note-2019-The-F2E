@@ -55,6 +55,12 @@ var app = new Vue({
         },
         selectPayMode:function(mode){
             this.payMode=mode;
+        },
+        
+    },
+    computed:{
+        count:function(){
+            return this.list.length;
         }
     }
 });
